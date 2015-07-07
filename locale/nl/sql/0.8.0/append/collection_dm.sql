@@ -1,0 +1,10 @@
+insert ignore into %prfx%locale_describe set langid=%localeid%, tabl_name='collection_dm', tabl_scode='Adult Fiction'   , description='Volwassenen fictie';
+insert ignore into %prfx%locale_describe set langid=%localeid%, tabl_name='collection_dm', tabl_scode='Adult Nonfiction', description='Volwassenen non-fictie';
+insert ignore into %prfx%locale_describe set langid=%localeid%, tabl_name='collection_dm', tabl_scode='Adolescent Fiction', description='Jeugd fictie';
+insert ignore into %prfx%locale_describe set langid=%localeid%, tabl_name='collection_dm', tabl_scode='Adolescent Nonfiction', description='Jeugd non-fictie';
+insert ignore into %prfx%locale_describe set langid=%localeid%, tabl_name='collection_dm', tabl_scode='Juvenile Fiction', description='Jeugd fictie';
+insert ignore into %prfx%locale_describe set langid=%localeid%, tabl_name='collection_dm', tabl_scode='Juvenile Nonfiction', description='Jeugd non-fictie';
+insert ignore into %prfx%locale_describe set langid=%localeid%, tabl_name='collection_dm', tabl_scode='Poetry'          , description='Poëzie';
+insert ignore into %prfx%locale_describe set langid=%localeid%, tabl_name='collection_dm', tabl_scode='New Books'       , description='Nieuwe boeken';
+insert ignore into %prfx%locale_describe set langid=%localeid%, tabl_name='collection_dm', tabl_scode='Periodics'       , description='Tijdschriften';
+insert ignore into %prfx%locale_describe set langid=%localeid%, tabl_name='collection_dm', tabl_scode='Reference'       , description='Naslagwerken';

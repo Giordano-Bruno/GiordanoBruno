@@ -1,0 +1,10 @@
+insert ignore into %prfx%locale_describe (`langid`, `tabl_name`, `tabl_code`, `description`) VALUES
+(%localeid%,'material_type_dm', 1  , 'аудиопленка'),
+(%localeid%,'material_type_dm', 2  , 'книга'),
+(%localeid%,'material_type_dm', 3  , 'CD аудио'),
+(%localeid%,'material_type_dm', 4  , 'CD'),
+(%localeid%,'material_type_dm', 5  , 'оборудование'),
+(%localeid%,'material_type_dm', 6  , 'переодика'),
+(%localeid%,'material_type_dm', 7  , 'карты'),
+(%localeid%,'material_type_dm', 8  , 'DVD видео'),
+(%localeid%,'material_type_dm', 9  , 'цифровые книги'),

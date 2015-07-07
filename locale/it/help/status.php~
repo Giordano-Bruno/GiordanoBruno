@@ -1,0 +1,92 @@
+<h1>Lo "stato" dei Beni materiali della biblioteca</h1>
+<p>Lo "stato" di un Bene materiale (sia esso libro, DVD, CD audio, ecc.) è la condizione in cui esso si trova, ovvero se è disponibile per il prestito, se è in ordinazione, in riparazione ecc.</p>
+<p>La tabella seguente elenca gli stati possibili per un dato Bene della biblioteca.</p>
+
+<table class="primary">
+  <tr><th>Stato</th><th>Descrizione</th></tr>
+  <tr><td class="primary" valign="top">nello scaffale</td><td class="primary">Il Bene è stato archiviato e riposto nello scaffale. E' disponibile per il prestito agli utenti della biblioteca.</td></tr>
+  <tr><td class="primary" valign="top">prestato</td><td class="primary">Il Bene è stato temporaneamente preso in prestito da un utente della biblioteca.</td></tr>
+  <tr><td class="primary" valign="top">prenotato</td><td class="primary">Il Bene è stato prenotato da un utente della biblioteca e pertanto non è possibile quindi prestarlo ad altri utenti.</td></tr>
+  <tr><td class="primary" valign="top">da inventariare e riporre nello scaffale</td><td class="primary">Il Bene è sull'elenco degli oggetti da inventariare e non è stato ancora riposto negli scaffali.</td></tr>
+  <tr><td class="primary" valign="top">danneggiato/in riparazione</td><td class="primary">Il Bene è danneggiato ed è attualmente fuori per essere riparato.</td></tr>
+  <tr><td class="primary" valign="top">in vetrina</td><td class="primary">Il Bene non è disponibile per il prestito perchè è stato esposto nella vetrina della biblioteca.</td></tr>
+  <tr><td class="primary" valign="top">perso</td><td class="primary">Il Bene  non è disponibile perchè non si riesce più a trovarlo.</td></tr>
+  <tr><td class="primary" valign="top">in sala lettura</td><td class="primary">Il Bene è stato momentaneamente prestato a qualcuno per la lettura o l'utilizzo in sala.</td></tr>
+  <tr><td class="primary" valign="top">in ordinazione</td><td class="primary">Il Bene è stato ordinato e non è ancora arrivato.</td></tr>
+</table>
+
+<br>
+Bibliography status changes are allowed on the following pages with the following rules.<br><br>
+<table class="primary">
+  <tr><th>Page</th><th>Old Status</th><th>New Status</th><th>Rules</th></tr>
+  <tr>
+    <td class="primary" valign="top" rowspan="3">member info</td>
+    <td class="primary" valign="top">checked in</td>
+    <td class="primary" valign="top">checked out</td>
+    <td class="primary" valign="top"></td>
+  </tr>
+  <tr>
+    <td class="primary" valign="top">other<sup>*</sup></td>
+    <td class="primary" valign="top">checked out</td>
+    <td class="primary" valign="top"></td>
+  </tr>
+  <tr>
+    <td class="primary" valign="top">on hold</td>
+    <td class="primary" valign="top">checked out</td>
+    <td class="primary" valign="top">Only allow if member is first in hold queue for the given copy or if hold queue is empty.</td>
+  </tr>
+  <tr>
+    <td class="primary" valign="top" rowspan="5">check in</td>
+    <td class="primary" valign="top">checked out</td>
+    <td class="primary" valign="top">shelving cart</td>
+    <td class="primary" valign="top">Will calculate late fees.</td>
+  </tr>
+  <tr>
+    <td class="primary" valign="top">checked out</td>
+    <td class="primary" valign="top">on hold</td>
+    <td class="primary" valign="top">Will calculate late fees and show message to place book in hold storage.</td>
+  </tr>
+  <tr>
+    <td class="primary" valign="top">other<sup>*</sup></td>
+    <td class="primary" valign="top">shelving cart</td>
+    <td class="primary" valign="top"></td>
+  </tr>
+  <tr>
+    <td class="primary" valign="top">on hold</td>
+    <td class="primary" valign="top">shelving cart</td>
+    <td class="primary" valign="top">Will only allow if hold queue for given copy is empty.</td>
+  </tr>
+  <tr>
+    <td class="primary" valign="top">shelving cart</td>
+    <td class="primary" valign="top">checked in</td>
+    <td class="primary" valign="top"></td>
+  </tr>
+  <tr>
+    <td class="primary" valign="top" rowspan="5">biblio info</td>
+    <td class="primary" valign="top">other<sup>*</sup></td>
+    <td class="primary" valign="top">checked in</td>
+    <td class="primary" valign="top"></td>
+  </tr>
+  <tr>
+    <td class="primary" valign="top">other<sup>*</sup></td>
+    <td class="primary" valign="top">other<sup>*</sup></td>
+    <td class="primary" valign="top"></td>
+  </tr>
+  <tr>
+    <td class="primary" valign="top">checed in</td>
+    <td class="primary" valign="top">other<sup>*</sup></td>
+    <td class="primary" valign="top"></td>
+  </tr>
+  <tr>
+    <td class="primary" valign="top">on hold</td>
+    <td class="primary" valign="top">checked in</td>
+    <td class="primary" valign="top">Only allowed if hold queue for given copy is empty.</td>
+  </tr>
+  <tr>
+    <td class="primary" valign="top">on hold</td>
+    <td class="primary" valign="top">other<sup>*</sup></td>
+    <td class="primary" valign="top">Only allowed if hold queue for given copy is empty.</td>
+  </tr>
+</table>
+
+* - note: other includes damaged/mend, display, lost, on loan and on order status states.

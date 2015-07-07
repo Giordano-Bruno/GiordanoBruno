@@ -1,0 +1,13 @@
+insert into %prfx%collection_dm values (null,'Jeugd fictie','N',21,0.05);
+insert into %prfx%collection_dm values (null,'Jeugd non-fictie','N',21,0.05);
+insert into %prfx%collection_dm values (null,'Adolescent fictie','Y',21,0.05);
+insert into %prfx%collection_dm values (null,'Adolescent non-fictie','N',21,0.05);
+insert into %prfx%collection_dm values (null,'Volwassenen fictie','N',21,0.05);
+insert into %prfx%collection_dm values (null,'Volwassenen non-fictie','N',21,0.05);
+insert into %prfx%collection_dm values (null,'Cursorische lectuur Engels','N',7,0.05);
+insert into %prfx%collection_dm values (null,'Cursorische lectuur Frans','N',7,0.15);
+insert into %prfx%collection_dm values (null,'Poëzie','N',7,0.15);
+insert into %prfx%collection_dm values (null,'Nieuwe boeken','N',14,0.10);
+insert into %prfx%collection_dm values (null,'Tijdschriften','N',14,0.05);
+insert into %prfx%collection_dm values (null,'Naslagwerken','N',0,0.00);
+insert into %prfx%collection_dm values (null,'DVD','N',3,1.00);

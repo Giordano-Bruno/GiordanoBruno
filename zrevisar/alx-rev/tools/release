@@ -1,0 +1,49 @@
+#!/bin/sh
+# Current directory should be highest level of the source directory.
+# Tags the source, prepares for release, creates release archives one directory 
+# level higher than current. Includes specified version number in file names.
+# A working directory named 'openbiblio' is created and removed in the
+# process and must not exist beforehand.
+#
+
+if [ "$1" = "-t" ]; then
+	testrun=true
+	shift
+else
+	testrun=false
+fi
+
+if [ -z "$1" ]; then
+	echo Usage: ./tools/release '<release version>' >&2
+	exit 1
+fi
+if ! (echo "$1" | egrep -q '^[0-9]+\.[0-9]+\.[0-9]+(\.[0-9]+)?([a-z][a-z0-9]*)?$'); then
+	echo $0: Bad release version number: $1 >&2
+	exit 1
+fi
+if [ -d openbiblio ]; then
+	echo $0: a directory named openbiblio already exists >&2
+	exit 1
+fi
+
+tag=REL_`echo $1`
+basefile=openbiblio-$1
+
+$testrun && echo TEST RUN: not tagging
+$testrun || hg tag $tag || exit 1
+cp -r . ../openbiblio
+cd ../openbiblio || exit 1
+
+# Clean up the tree
+rm -rf tools tests .hg .hgtags
+mv database_constants_deploy.php database_constants.php
+sed "/OBIB_CODE_VERSION/s/CVS/$1/" shared/global_constants.php >shared/global_constants.tmp
+mv shared/global_constants.tmp shared/global_constants.php
+
+# Make archives
+cd ..
+tar cjf $basefile.tar.bz2 openbiblio
+tar czf $basefile.tar.gz openbiblio
+zip -r $basefile.zip openbiblio
+
+rm -rf openbiblio
