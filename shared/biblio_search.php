@@ -53,6 +53,10 @@ echo "<pre>";
 print_r($_REQUEST);
 echo "</pre>";
 */
+
+  require_once("../classes/Localize.php");
+  $loc = new Localize(OBIB_LOCALE,"shared");
+
   #****************************************************************************
   #*  Function declaration only used on this page.
   #****************************************************************************
@@ -192,8 +196,6 @@ echo "</pre>";
   } else {
     require_once("../shared/header.php");
   }
-  require_once("../classes/Localize.php");
-  $loc = new Localize(OBIB_LOCALE,"shared");
 
   # Display no results message if no results returned from search.
   if ($biblioQ->getRowCount() == 0) {

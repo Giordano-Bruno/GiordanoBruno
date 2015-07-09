@@ -94,6 +94,8 @@ class InstallQuery extends Query {
   }
   
   function freshInstall($locale, $sampleDataRequired = false,
+
+#FIXME hacer que funcione el discriminativo par alos valor seiguientes: ver funcion anterior abajo
 /*
   	$sampleDataRequired =	false,
 	$CDU		=	false,
@@ -117,6 +119,60 @@ class InstallQuery extends Query {
     $this->act($sql);
   }
   
+/*
+  function freshInstall($locale, $parament,  //jalg para descrimitarios 
+	$sampleDataRequired =	false,
+	$CDU		=	false,
+	$CDD		=	false,
+	$IBIC		=	false,
+	$CUTTER		=	false,
+	$version	=	OBIB_LATEST_DB_VERSION,
+	$tablePrfx	=	DB_TABLENAME_PREFIX) {
+
+			$rootDir   = '../install/' . $version . '/sql';
+			$ComunDir = '../install/GB-0.33/comun';
+			$localeDir = '../locale/' . $locale . '/sql/' . $version;
+			$updateDir = '../install/GB-0.33/update';//revisar si es necesario en la instalacio jalg
+
+		if( !($parament == 'CDU' || $parament == 'CDD' || $parament == 'IBIC' || $parament == 'CUTTER')) {//jal jul-2013 para discrimitavos
+			    $this->executeSqlFilesInDir($ComunDir , $tablePrfx);
+			    $this->executeSqlFilesInDir($rootDir , $tablePrfx);
+			    $this->executeSqlFilesInDir($localeDir . '/domain/'	,  $tablePrfx);
+			    $this->executeSqlFilesInDir($localeDir . '/MARC/'	,  $tablePrfx);
+			    $this->executeSqlFilesInDir($localeDir . '/lookup2/'	,  $tablePrfx);
+			    $this->executeSqlFilesInDir($localeDir . '/theme/'	,  $tablePrfx);
+				if($sampleDataRequired) {
+						$this->executeSqlFilesInDir($localeDir . '/sample/',  $tablePrfx);
+				}
+			  	$this->executeSqlFilesInDir($updateDir, $tablePrfx);
+		 }
+
+		switch ($parament) {
+
+			case  'CDU' :
+				if($sampleDataRequired) {
+		     		 $this->executeSqlFilesInDir($localeDir . '/CDU/',  $tablePrfx);
+			    }
+				break;
+			case   'CDD':
+				if($sampleDataRequired) {
+		     		 $this->executeSqlFilesInDir($localeDir . '/CDD/',  $tablePrfx);
+			    }
+ 				break;
+			case  'IBIC':
+				if($sampleDataRequired) {
+		     		 $this->executeSqlFilesInDir($localeDir . '/IBIC/', $tablePrfx);
+			    }
+				break;
+			case  'CUTTER':
+				if($sampleDataRequired) {
+		     		 $this->executeSqlFilesInDir($localeDir . '/CUTTER/', $tablePrfx);
+			    }
+ 			break;
+	 	}//case
+	}//funtion
+*/
+
   function getSqlFilesInDir($dir, $tablePrfx = "") {
     if (!is_dir($dir))
        $dir = absolutePath($dir);

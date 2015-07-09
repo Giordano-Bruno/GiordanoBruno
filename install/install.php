@@ -22,7 +22,7 @@ echo "</pre>";
 
   require_once("../classes/InstallQuery.php");
 
-  $locale = 'en';
+  $locale = 'es';
 //  $locale = NULL;
 
   if (isset($_POST['locale'])) {
@@ -72,7 +72,7 @@ echo "</pre>";
 </br>
 
 <?php
-//  require_once("../install/create_dir.php");
+  require_once("../install/create_dir.php");
 
   # testing connection and current version
   $installQ = new InstallQuery(NULL);

@@ -9,12 +9,11 @@ require_once("../classes/BiblioSearch.php");//jalg
 require_once("../classes/BiblioField.php");
 require_once("../classes/Localize.php");
 
-
+/*
 echo "<pre>";
 print_r($_POST);
 echo "<pre>";
- 
-
+*/
  
 /******************************************************************************
  * BiblioQuery data access component for library bibliographies

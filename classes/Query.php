@@ -78,6 +78,7 @@ class Query extends mysqli{
       return $r->next();
     }
   }
+
   function select01($sql) {
     $r = $this->select($sql);
     if ($r->count() == 0) {
@@ -90,20 +91,75 @@ class Query extends mysqli{
     }
   }
 
-  function _act($sql) {
+#FIXME JALG 7-jul-2015 esta funcion debe en caso de no encotrar setting mandar a instalar, y si se esta en isatall mandar codigos de error
+  function _act($sql) {//alx
+//echo $sql; //test jalg
+    $r = $this->query($sql);
+    if ($r === false) {
+     // if (mysql_errno() == 1146 && preg_match('/' . OBIB_DATABASE . '.settings/i', mysql_error())) {
+        // Settings not found
+
+
+//echo mysql_errno();//test jalg
+
+        header("Location: ../install/");
+      }
+/*
+      Fatal::dbError($sql, 'Database query failed', $this->error);
+      Fatal::dbError($sql, 'Database query failed (' . mysql_errno() . ')', mysql_error());
+    }
+*/
+    return $r;
+  }
+
+
+/*
+  function _act($sql) {//esp
+//    if (!$this->_link) {
+ //     Fatal::internalError('Tried to make database query before connection.');
+//    }
+    $r = mysql_query($sql, $this->_link);
+    if ($r === false) {
+      if (mysql_errno() == 1146 && preg_match('/' . OBIB_DATABASE . '.settings/i', mysql_error())) {
+        // Settings not found
+        header("Location: ../install/");
+      }
+      Fatal::dbError($sql, 'Database query failed (' . mysql_errno() . ')', mysql_error());
+    }
+    return $r;
+  }
+*/
+/*
+  function _act($sql) {//alx
     $r = $this->query($sql);
     if ($r === false) {
       if (mysql_errno() == 1146 && preg_match('/' . OBIB_DATABASE . '.settings/i', mysql_error())) {
         // Settings not found
 echo $sql;
-//        header("Location: ../install/");
+        header("Location: ../install/");
+//echo mysql_errno();
       }
-
-      Fatal::dbError($sql, 'Database query failed', $this->error);
+      Fatal::dbError($sql, 'Database query failed (' . mysql_errno() . ')', mysql_error());
+  }
+    return $r;
+  }
+*/
+/*
+  function _act($sql) {//esp
+    if (!$this->_link) {
+      Fatal::internalError('Tried to make database query before connection.');
+    }
+    $r = mysql_query($sql, $this->_link);
+    if ($r === false) {
+      if (mysql_errno() == 1146 && preg_match('/' . OBIB_DATABASE . '.settings/i', mysql_error())) {
+        // Settings not found
+        header("Location: ../install/");
+      }
       Fatal::dbError($sql, 'Database query failed (' . mysql_errno() . ')', mysql_error());
     }
     return $r;
   }
+*/
 
 /*
   function _act($sql) {
@@ -121,6 +177,24 @@ echo $sql;
     return $r;
   }
 */
+
+/*
+  function _act($sql) {//gb
+    if (!$this->_link) {
+      Fatal::internalError('Tried to make database query before connection.');
+    }
+    $r = mysql_query($sql, $this->_link);
+    if ($r === false) {
+      if (mysql_errno() == 1146 && preg_match('/' . OBIB_DATABASE . '.settings/i', mysql_error())) {
+        // Settings not found
+        header("Location: ../install/");
+      }
+      Fatal::dbError($sql, 'Database query failed (' . mysql_errno() . ')', mysql_error());
+    }
+    return $r;
+  }
+*/
+
   function tryact($sql) {
     $r = $this->query($sql);
     return $r;

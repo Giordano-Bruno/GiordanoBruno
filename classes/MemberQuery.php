@@ -5,8 +5,8 @@
  require_once("../shared/global_constants.php");
 require_once("../classes/Member.php");
 require_once("../classes/Query.php");
-require_once("../classes/Settings.php");
-require_once("../classes/SettingsQuery.php");
+//require_once("../classes/Settings.php");jalg resisar si se requieren 8-7-2015
+//require_once("../classes/SettingsQuery.php");
 
 /******************************************************************************
  * MemberQuery data access component for library members

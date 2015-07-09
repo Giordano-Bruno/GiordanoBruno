@@ -13,14 +13,9 @@ Codigo de alexrayne
  ******************************************************************************
  */
 
-//
-/*
-echo "<pre>";
-print_r($_REQUEST);
-//print_r($loc);
-echo "</pre>";
-*/
-#fixme revisar si es necesario, cuando se activa solo muestr el idioma predefinido
+//require_once("../shared/global_constants.php");
+//require_once("../classes/Query.php");
+
 //const BASELOCALE = OBIB_LOCALE;//para predefinirlo en shared/global_constants.php
 
 class Localize {
@@ -38,8 +33,14 @@ class Localize {
    * @access public
    ****************************************************************************
    */
-  function Localize ($locale, $section) {
+/*
+ function Localize ($locale, $section) {//modificar segun este definido en base de datos, como esta en installqyery
+if (is_null($_POST['locale'])){
 echo $locale;//test
+#FIXME Falla al cambiar de idioma en el modulo admin, es requeredido predefinirlo para el momento de instalar, pero posteriormente debe trabajar con el selector de admin, tambien cambiar en class/istall class/upgrade
+
+*/
+  function Localize ($locale, $section) {
 	$this->localePath = $locale;
 	$this->localeSection = $section;
 	$this->_trans = $this->GetTrans($locale, "trans");
@@ -76,6 +77,20 @@ echo $locale;//test
   function LoadTrans($localePath){
     if (is_readable($localePath)) {
         include($localePath);
+
+    ## ##################################
+    ## adds suport for plugins - fl, 2009
+    ## ##################################
+    /* Move all plugin/*.tran to locale directory for generalize $trans.
+		$list = getPlugIns($section.'.tran');
+		for ($x=0; $x<count($list); $x++) {
+			include($list[$x]);
+		}
+		*/
+    ## ##################################
+//    $this->_trans = $trans;
+//    return true;//añ parecer ya esta definido antes.
+
 		$this->_cache[$localePath] = $trans;
 		return $trans;
 	}

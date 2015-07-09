@@ -3,6 +3,8 @@
  * See the file COPYRIGHT.html for more details.
  */
  
+//require_once("../shared/global_constants.php");
+//require_once("../classes/Query.php");
 require_once("../classes/LocaleQuery.php");
 require_once("../classes/InstallQuery.php");
 
@@ -209,6 +211,7 @@ class UpgradeQuery extends InstallQuery {
                                 "home_phone" => "home_phone",
                                 "work_phone" => "work_phone",
                                 "email" => "NULL",
+                                "foto" => "NULL",
                                 "classification" => "classification",
                                 "school_grade" => "school_grade",
                                 "school_teacher" => "school_teacher",
@@ -246,6 +249,7 @@ class UpgradeQuery extends InstallQuery {
                                 "library_image_url" => "library_image_url",
                                 "use_image_flg" => "use_image_flg",
                                 "library_hours" => "library_hours",
+                                "library_aders" => "NULL",
                                 "library_phone" => "library_phone",
                                 "library_url" => "library_url",
                                 "opac_url" => "opac_url",
