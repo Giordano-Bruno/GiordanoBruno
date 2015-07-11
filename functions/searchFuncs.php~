@@ -61,10 +61,8 @@ function explodeQuoted($str, $extended = false) {
       if($word[strlen($word)-1]=="\"") $inQuotes=false; 
     } else { 
       // create a new element 
-      $elements[]=mb_ereg_replace('"','',$word); // JALG from ALX 11-07-2015
-      if($word[0]=="\"" && $word[mb_strlen($word, $encoding = OBIB_CHARSET)-1]!="\"") $inQuotes=true; // JALG from ALX 11-07-2015
-//      $elements[]=str_replace('"','',$word);
-//      if($word[0]=="\"" && $word[strlen($word)-1]!="\"") $inQuotes=true; 
+      $elements[]=str_replace('"','',$word);
+      if($word[0]=="\"" && $word[strlen($word)-1]!="\"") $inQuotes=true; 
     }
   } 
   return $elements; 

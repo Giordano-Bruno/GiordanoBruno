@@ -55,39 +55,3 @@ if(!isset($marcSubflds[$arrayIndex])){//JALG 02-2015 modificado por que si no ex
     echo $subfieldSet[1];
   }
 }
-
-
-/*********************************************************************************
- * Compare usMARC tag with pattern
- * @param string $tag 	input field tag in format NNN[c[d]]
- * @param string $patternt - same format, but can be shorter then $tag
- * @return bool
- * @access public
- *********************************************************************************
- */
-
-function SameMARC($tag, $pattern){// JALG from ALX 11-07-2015
-	//if (strlen($pattern) < strlen($tag)) return false;
-	$slen = min( strlen($pattern) , strlen($tag) );
-	return strncmp($tag, $pattern, $slen);
-}
-
-function NotSameMARC($tag, $pattern){// JALG from ALX 11-07-2015
-	$slen = min( strlen($pattern) , strlen($tag) );
-	if (strncmp($tag, $pattern, $slen) != 0)
-		return 0;
-	return 1;
-}
-
-/**
- * accepts a NNN$A formatted MARC tag and returns its components as an object.
- * ex. '245$a' ==> '{"tag":"245","suf":"a"}'
- */
-function makeTagObj($grp) {// JALG from ALX 11-07-2015
-//echo"makeTagGrp: grp==>";print_r($grp);echo"<br />\n";
-	foreach ($grp as $tag) {
-		$parts = explode('$',$tag);
-		$rslt .= '{"tag":"'.$parts[0].'","suf":"'.$parts[1].'"},';
-	}
-	return substr($rslt,0,-1);  ## remove trailing comma
-}

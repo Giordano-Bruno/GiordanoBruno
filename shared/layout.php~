@@ -30,16 +30,8 @@
   if (!is_readable($filename)) {
     $filename = '../layouts/default/'.$_REQUEST["name"].'.php';
   }
-
-  $classname = 'Layout_'.$_REQUEST["name"];  // JALG from ALX 11-07-2015 
-  
-  if(!in_array($filename, $layout_whitelist)) {  // JALG from ALX 11-07-2015 
-      $filename = "../layouts/default/list.php"; // default to this 
-      $classname = "Layout_list"; 
-  }
-
   assert('is_readable($filename)');
-//  $classname = 'Layout_'.$_REQUEST["name"];
+  $classname = 'Layout_'.$_REQUEST["name"];
   
   require_once($filename);
   

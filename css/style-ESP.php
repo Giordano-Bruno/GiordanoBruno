@@ -2,13 +2,13 @@
  *  Body Style
  *********************************************************/
 body {
-  background-color: <?php echo H(OBIB_PRIMARY_BG);?>
+  background-color: <?php echo H(OBIB_PRIMARY_BG);?>;
 }
 
 /*********************************************************
  *  Font Styles
  *********************************************************/
-font.primary {
+font.primary, .primary td {
   color: <?php echo H(OBIB_PRIMARY_FONT_COLOR);?>;
   font-size: <?php echo H(OBIB_PRIMARY_FONT_SIZE);?>px;
   font-family: <?php echo H(OBIB_PRIMARY_FONT_FACE);?>;
@@ -118,9 +118,6 @@ a.tab:hover {text-decoration: underline}
 /*********************************************************
  *  Table Styles
  *********************************************************/
-table.primary {
-  border-collapse: collapse
-}
 table.border {
   border-style: solid;
   border-color: <?php echo H(OBIB_BORDER_COLOR);?>;
@@ -155,28 +152,6 @@ th.rpt {
   text-align: left;
   vertical-align: bottom;
 }
-
-tr[class~="primary"] {
-  background-color: <?php echo H(OBIB_PRIMARY_BG);?>;
-  color: <?php echo H(OBIB_PRIMARY_FONT_COLOR);?>;
-  font-size: <?php echo H(OBIB_PRIMARY_FONT_SIZE);?>px;
-  font-family: <?php echo H(OBIB_PRIMARY_FONT_FACE);?>;
-  border-color: <?php echo H(OBIB_BORDER_COLOR);?>;
-  border-width: <?php echo H(OBIB_BORDER_WIDTH);?>;
-  padding: <?php echo H(OBIB_PADDING);?>;
-}
-tr[class~="alt1"] { background-color: <?php echo H(OBIB_ALT1_BG);?>}
-tr[class~="hihglihgting"] {}
-tr[class~="hihglihgting"]:hover { background-color: <?php echo H(OBIB_TITLE_BG);?>}
-tr[class~="hihglihgting"]:first-child:hover {  background-color: <?php echo H(OBIB_PRIMARY_BG);?> }
-
-td[class~="row_prime"] {
-  border-color: <?php echo H(OBIB_BORDER_COLOR);?>;
-  border-width: <?php echo H(OBIB_BORDER_WIDTH);?>;
-  padding: <?php echo H(OBIB_PADDING);?>;
-  border-style: solid
-}
-
 td.primary {
   background-color: <?php echo H(OBIB_PRIMARY_BG);?>;
   color: <?php echo H(OBIB_PRIMARY_FONT_COLOR);?>;
@@ -279,27 +254,6 @@ td.noborder {
   font-family: <?php echo H(OBIB_PRIMARY_FONT_FACE);?>;
   padding: <?php echo H(OBIB_PADDING);?>;
 }
-
-table.form { margin-bottom: 1em }
-table.form th.title {
-  background-color: <?php echo H(OBIB_PRIMARY_BG);?>;
-  color: <?php echo H(OBIB_PRIMARY_FONT_COLOR);?>;
-  text-align: left;
-  font-weight: bold;
-  font-size: 18px;
-  border: none;
-  border-bottom: solid <?php echo H(OBIB_ALT2_BG);?> 2px;
-}
-table.form th {
-  text-align: right;
-  vertical-align: top;
-  background-color: <?php echo H(OBIB_PRIMARY_BG);?>;
-  color: <?php echo H(OBIB_PRIMARY_FONT_COLOR);?>;
-  border: none;
-}
-table.form .error { font-weight: bold; color: red }
-table.form .error { font-weight: bold; color: red }
-
 /*********************************************************
  *  Form Styles
  *********************************************************/
@@ -332,7 +286,7 @@ input {
   border-top-color: <?php echo H(OBIB_PRIMARY_BG);?>;
   border-bottom-color: <?php echo H(OBIB_PRIMARY_BG);?>;
   border-right-color: <?php echo H(OBIB_PRIMARY_BG);?>;
-  padding: 0px;
+  padding: 1px;
   scrollbar-base-color: <?php echo H(OBIB_ALT1_BG);?>;
   font-family: <?php echo H(OBIB_PRIMARY_FONT_FACE);?>;
   color: <?php echo H(OBIB_PRIMARY_FONT_COLOR);?>;
@@ -344,7 +298,7 @@ textarea {
   border-top-color: <?php echo H(OBIB_PRIMARY_BG);?>;
   border-bottom-color: <?php echo H(OBIB_PRIMARY_BG);?>;
   border-right-color: <?php echo H(OBIB_PRIMARY_BG);?>;
-  padding: 0px;
+  padding: 1px;
   scrollbar-base-color: <?php echo H(OBIB_ALT1_BG);?>;
   font-family: <?php echo H(OBIB_PRIMARY_FONT_FACE);?>;
   color: <?php echo H(OBIB_PRIMARY_FONT_COLOR);?>;
@@ -357,11 +311,18 @@ select {
   border-top-color: <?php echo H(OBIB_PRIMARY_BG);?>;
   border-bottom-color: <?php echo H(OBIB_PRIMARY_BG);?>;
   border-right-color: <?php echo H(OBIB_PRIMARY_BG);?>;
-  padding: 0px;
+  padding: 1px;
   scrollbar-base-color: <?php echo H(OBIB_ALT1_BG);?>;
   font-family: <?php echo H(OBIB_PRIMARY_FONT_FACE);?>;
   color: <?php echo H(OBIB_PRIMARY_FONT_COLOR);?>;
 }
+
+td.primary.form-required, td.primary.form-optional { padding-left: 14px; }
+td.primary.form-required { background: url(../images/required-star.png) no-repeat; }
+td.primary.form-required sup { display: none; }
+
+tr.biblio-late td { color: red; font-weight: bold; background: #ffccbb; border-color: white; }
+
 
 ul.nav_main { list-style-type: none; padding-left: 0; margin-left: 0; }
 li.nav_selected:before { white-space: pre-wrap; content: "\bb  " }
@@ -369,6 +330,7 @@ ul.nav_main li.nav_selected { font-weight: bold }
 ul.nav_sub li.nav_selected { font-weight: bold }
 ul.nav_main li { font-weight: normal }
 ul.nav_sub li { font-weight: normal }
+
 
 li.report_category { margin-bottom: 1em }
 
@@ -397,52 +359,5 @@ table.resultshead td {
   text-align: right;
 }
 table.results td.primary { border-top: none; }
-
-table.buttons {
-  margin: 0 0 0 auto;
-  padding: 0;
-  border-collapse: separate;
-  background: white;
-}
-table.buttons td {
-  background-color: <?php echo OBIB_ALT2_BG;?>;
-  /* Hide from IE5/Mac \*/
-  border-color: <?php echo OBIB_ALT2_BG;?>;
-  border-style: outset;
-  border-width: 1px;
-  /* End hiding */
-  padding: 4px;
-  font-weight: bold;
-  font-size: 12px;
-  text-align: center;
-  vertical-align: middle;
-}
-table.buttons input {
-  border: none;
-  color: <?php echo OBIB_ALT2_FONT_COLOR;?>;
-  background: <?php echo OBIB_ALT2_BG;?>;
-  padding: 0;
-  margin: 0;
-  font-weight: bold;
-  white-space: normal;
-}
-table.buttons input:hover { text-decoration: underline; }
-table.buttons a {
-  color: <?php echo OBIB_ALT2_FONT_COLOR;?>;
-  text-decoration: none;
-}
-table.buttons a:hover { text-decoration: underline; }
-table.buttons a:visited { color: <?php echo OBIB_ALT2_FONT_COLOR;?>; }
-
-div.errorbox {
-  border-style: solid;
-  border-color: <?php echo H(OBIB_BORDER_COLOR);?>;
-  border-width: <?php echo H(OBIB_BORDER_WIDTH);?>;
-  max-width: 500px;
-  margin: 10px;
-  padding: 5px;
-  background-color: <?php echo H(OBIB_ALT1_BG);?>;
-}
-div.errorbox .errorhdr { font-size: large; font-weight: bold }
-div.errorbox ul { margin-left: 0; padding-left: 1.5em }
-div.errorbox li { margin-left: 0 }
+td.picture { width: 120px; }
+.Z3988 { display: none; }

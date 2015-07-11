@@ -45,8 +45,8 @@ function moneyFormat($amount,$decimals){
   }
   // Disabling following line forces currency symbol. Recommended for Admin, Library Settings, HTML Charset: utf-8
   $currencySymbol = $localeInfo["currency_symbol"];
-  if (!H($currencySymbol)) {//jalg from ALX 11-07-2015
-//  if (!$currencySymbol) {
+  if (H(!$currencySymbol)) {//jalg from ALX 11-07-2015
+  if (!$currencySymbol) {
     $currencySymbol = '$';
   }
   $dec_point = $localeInfo["mon_decimal_point"];

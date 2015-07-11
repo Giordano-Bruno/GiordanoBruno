@@ -73,6 +73,14 @@
     exit();
   }
 
+  if (isset($_POST["UpdateLang"])){ //jalg multi 5-07-2015
+    //require_once("../shared/logincheck.php");
+    //require_once("../shared/header.php");
+	$localizator = new LocaleQuery($set->getLocale(), $set->setCharset(""), $set->getVersion());
+    $locok = $localizator->PrepareLocaleSeance();
+    header("Location: ../admin/settings_edit_form.php?reset=Y");
+    exit();
+  }
 
   #**************************************************************************
   #*  Update domain table row

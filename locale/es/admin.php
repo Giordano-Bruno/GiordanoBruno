@@ -213,6 +213,12 @@ $trans["admin_settingsLocale"]			= "\$text = 'Idioma:';";
 $trans["admin_settingsHTMLChar"]		= "\$text = 'Juego de caracteres HTML:';";
 $trans["admin_settingsHTMLTagLangAttr"]		= "\$text = 'Atributos de etiquetas de lenguaje HTML:';";
 
+//$trans["adminCollections_edit_formNote"]		= "\$text = 'Notas:';";//cambiar nombre jalg 
+$trans["If the month value for purging history is higher than zero, values in statistics reports shift over time.<br>Data from statistics reports should be saved outside OpenBiblio for future reference."]		= "\$text = 'Si el valor de mes para purgar la historia es mayor que cero,<br> los valores en los informes de estadísticas cambian con el tiempo.';";
+
+
+
+
 #* No estan en Openbiblio 7.1 adecuacion por jalg
 $trans["days"]				= "\$text = 'días';";
 $trans["admin_settingsInactiveDays"]	= "\$text = 'Auto-actualizar usuarios inactivos en:';";

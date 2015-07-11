@@ -231,10 +231,3 @@ function printSelect($fieldName, $domainTable, &$postVars, $disabled=FALSE, $req
   }
   echo dmSelect($domainTable, $fieldName, "", FALSE, $attrs, $required);
 }
-
-function printHoldId($bibid, $copyid = NULL){//jalg ALX 11-7-2015
-    $res = "bibid=".HURL($bibid);
-    if (!empty($copyid))
-        $res .= "&copyid=".HURL($copyid);
-    return $res;
-}

@@ -51,7 +51,9 @@
   $_POST["holdMaxDays"] = $set->getHoldMaxDays();
   $set->setLocale($_POST["locale"]);
   $_POST["locale"] = $set->getLocale();
-  $set->setCharset($_POST["charset"]);
+  $set->setCharset("");//$_POST["charset"] //jalg multi
+  //$set->setCharset(DB_CHARSET);
+//  $set->setCharset($_POST["charset"]);
   $_POST["charset"] = $set->getCharset();
   $set->setHtmlLangAttr($_POST["htmlLangAttr"]);
   $_POST["htmlLangAttr"] = $set->getHtmlLangAttr();

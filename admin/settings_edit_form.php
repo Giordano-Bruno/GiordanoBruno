@@ -322,6 +322,15 @@
 </table>
 
       </form>
+<?php
+
+#fixme jalg revisar si es necesaria
+?> 
+<!--------
       <input type="submit" name="UpdateLang" value="Update" class="button" >
+---------->
+<table><tr><td valign="top"><font class="small"><?php echo $loc->getText("adminCollections_edit_formNote"); ?></font></td>
+<td><font class="small"><?php echo $loc->getText("If the month value for purging history is higher than zero, values in statistics reports shift over time.<br>Data from statistics reports should be saved outside OpenBiblio for future reference."); ?><br></font>
+</td></tr></table>
 
 <?php include("../shared/footer.php");

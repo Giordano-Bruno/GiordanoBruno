@@ -213,6 +213,12 @@ $trans["admin_settingsLocale"]			= "\$text = 'Idioma:';";
 $trans["admin_settingsHTMLChar"]		= "\$text = 'Juego de caracteres HTML:';";
 $trans["admin_settingsHTMLTagLangAttr"]		= "\$text = 'Atributos de etiquetas de lenguaje HTML:';";
 
+//$trans["adminCollections_edit_formNote"]		= "\$text = 'Atributos de etiquetas de lenguaje HTML:';";
+$trans["If the month value for purging history is higher than zero, values in statistics reports shift over time.<br>Data from statistics reports should be saved outside OpenBiblio for future reference."]		= "\$text = 'Si el valor de mes para purgar la historia es mayor que cero,<br> los valores en los informes de estadísticas cambian con el tiempo.';";
+
+
+
+
 #* No estan en Openbiblio 7.1 adecuacion por jalg
 $trans["days"]				= "\$text = 'días';";
 $trans["admin_settingsInactiveDays"]	= "\$text = 'Auto-actualizar usuarios inactivos en:';";
@@ -543,4 +549,13 @@ $trans["admin-transDel"]	= "\$text = 'Eliminar';";
 $trans["admin-transNewEntry"]	= "\$text = 'Agregar nueva entrada';";
 $trans["admin-transSubmit"]	= "\$text = 'Enviar';";
 
-?>
+
+#****************************************************************************
+#* Translation text for page copy_fields_list.php Custom Copy Fields
+#****************************************************************************
+$trans["Custom Copy Fields"]	= "\$text = 'Personalizacion de campos de copias';";
+$trans["Copy field, %desc%, has been added."]	= "\$text = 'El campo de para copia, %desc%, fue agregado.';";
+$trans["return to copy fields list"]	= "\$text = 'Regresar a Personalización de Campos de datos para las copias.';";
+$trans["Add new custom field list"]	= "\$text = 'Agregar nueva Personalización de Campos de datos para las copias.';";
+$trans["Add custom copy field"]	= "\$text = 'Agregar nueva Personalización de Campos de datos para las copias.';";
+$trans["Are you sure you want to delete field %desc% ?"]	= "\$text = 'Borrar Personalización de Campos de datos para las copias  %desc% ?.';";

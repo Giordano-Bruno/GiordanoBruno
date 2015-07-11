@@ -22,7 +22,7 @@ font.error {
   font-weight: bold;
 }
 h1 {
-  font-size: 15px;
+  font-size: 5px;
   font-family: verdana,arial,helvetica;
   font-weight: normal;
 }

@@ -46,8 +46,8 @@
       <?php echo $loc->getText("loginFormPassword"); ?>:</font>
     </td>
     <td valign="top" class="noborder">
-      <input type="password" name="pwd" size="20" maxlength="20"
-      value="<?php if (isset($postVars["pwd"])) echo H($postVars["pwd"]);   // JALG from ALX 11-07-2015 ?>" >
+      <input type="password" name="pwd" size="20" maxlength="20" value="<?php if (isset($postVars["pwd"])) echo H($postVars["pwd"]); ?>" >
+      value="<?php if (isset($postVars["pwd"])) echo H($postVars["pwd"]);  // JALG from ALX 11-07-2015 ?>" >
       <font class="error">
       <?php if (isset($pageErrors["pwd"])) echo H($pageErrors["pwd"]); ?></font>
     </td>
