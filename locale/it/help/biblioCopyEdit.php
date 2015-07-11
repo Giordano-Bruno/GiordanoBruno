@@ -1,86 +1,83 @@
-<h1>Copiar y editar nuevas p&aacute;ginas :</h1>
+<h1>Copia e modifica di nuove pagine :</h1>
 <center>
-  <font class="error">No editar copias en prestamo
+  <font class="error">Non modificare copie che sono in prestito!
 (<a href="http://sourceforge.net/tracker/index.php?func=detail&aid=1162251&group_id=50071&atid=458474">
 Bug 1162251</a>).</font>
 </center>
 <br><br>
 
-Sub secciones de ayuda:
+Sottosezione di aiuto:
 <ul>
-  <li><a href="#desc">Descripci&ograve;n de Campos </a></li>
-  <li><a href="#barc"></a> <a href="#barc">N&uacute;mero de c&oacute;digos de barras al ingresar una estructura externa de numeraci&oacute;n</a> </li>
-  <li><a href="#auto">Autogenerar c&oacute;digos de barra </a></li>
-  <li><a href="#seri"></a> <a href="#seri">Copiar n&uacute;meros de serie integrados en los n&uacute;meros de c&oacute;digo de barra</a>s</li>
+  <li><a href="#desc"></a> Descrizione dei Campi </a></li>
+  <li><a href="#barc"></a> <a href="#barc">Numero di codici a barre inserendo una struttura numerazione esterna</a> </li>
+  <li><a href="#auto">Autogenerazione codici a barre </a></li>
+  <li><a href="#seri"></a> <a href="#seri">Copiare numeri di serie integrati nei numeri di codice a barre</a></li>
 </ul>
 <br><br>
 
-<a name="desc">E</a>l siguiente cuadro proporciona descripciones de los campos situados en  Copiar y editar p&aacute;ginas.
+<a name="desc"></a>La seguente tabella fornisce le descrizioni dei campi per copiare e modificare le pagine.
 <br>
 <br>
 
-<table class="primary">
+<table class="primary" border ='1'>
   <tr>
     <th>Campo</th>
-    <th>Descripcci&oacute;n</th>
+    <th>Descrizione</th>
   </tr>
   <tr>
-    <td class="primary" valign="top">Número de codigo de barras o codigo de copia</td>
-    <td class="primary" valign="top">Código de identificación único de una copia (tambien conosido como numero de serie), deben ser todos caracteres alfabéticos y/o numéricos,
-un máximo de 20 caracteres.<br>
-Este campo es obligatorio, ya que identifica la copia en los formatos de circulación o prestamo<br>
-(La hora de salida, hora de llegada, espera)
+    <td class="primary" valign="top">Numero del codice a barre o codice di copia</td>
+    <td class="primary" valign="top">Codice di identificazione di una copia (anche conosciuto come numero di serie), devono essere tutti caratteri alfanumerici e/o numerici,
+per un massimo di 20 caratteri.<br>
+Questo campo � obbligatorio, identifica la copia al momento del prestito<br>
+(ora di uscita, di rientro, prenotazione)
 
-<br><br>Ver tambien: 
-<a href="../shared/help.php?page=barcodes">Comprendiendo los codigos de Barras</a>
+<br><br>Vedi anche: 
+<a href="../shared/help.php?page=barcodes">Capire i codici a barre</a>
     </td>
   </tr>
   <tr>
-    <td class="primary" valign="top">Descripción</td>
-    <td class="primary" valign="top">Texto breve enumerando caracteristicas unicas de la copia.</td>
+    <td class="primary" valign="top">Descrizione</td>
+    <td class="primary" valign="top">Testo breve con le caratteristiche uniche della copia.</td>
   </tr>
   <tr>
-    <td class="primary" valign="top">estado</td>
-    <td class="primary" valign="top"><b>Unicamente en edicion de copias</b>.
-<br>See also: 
-<a href="../shared/help.php?page=status">Comprendiendo los cambios de estado de las bibliografías</a>
+    <td class="primary" valign="top">Stato</td>
+    <td class="primary" valign="top"><b>Unicamente in modifica delle copie</b>.
+<br>Vedi anche: 
+<a href="../shared/help.php?page=status">Capire i cambi di stato delle bibliografie</a>
     </td>
   </tr>
 </table>
 <br><br>
 
-<a name="barc">Número de código de barras que entra por una estructura de numeración externa (uso de lectores o escanner)</a>:
+<a name="barc">Numero di codice a barre proveniente da numerazione esterna (tramite lettori o scanner)</a>:
 <ul>
-  <li>Ingresa el número de código de barras manualmente, o utilizar un escáner de código de barras si la copia ya está etiquetada,</li>
-  <li>Enviar (Autogenerar sin revisar) .</li>
+  <li>Inserire il numero di codice a barre manualmente, oppure utilizzare uno scanner di codici a barre se la copia � etichettata,</li>
+  <li>Inviare (genera automaticamente senza controlli) .</li>
 </ul>
 <br>
 
 <a name="auto">
-Mediante la activación de la paloma de verificacion en nueva copia.  
-<input name="autocodigo de barras" type="checkbox" checked> Autogenerate</a> 
-  opción para el campo de código de barras marcada, OpenBiblio asignara un número de código de barras único
-automáticamente, siguiendo las reglas de la estructura interna de numeración:
+Mediante l'attivazione dell'opzione di verifica della nuova copia.  
+<input name="autocodigo de barras" type="checkbox" checked> Genera automaticamente </a> 
+<br><br>
+  Se selezionata, GiordanoBruno assegner� un numro di codice a barre univoco automaticamente, seguendo le regole della struttura interna di numerazione:
 <ul>
-  <li>La primera parte se calcula a partir de la <i>bibid</i> (numero inerno de control de la base de datos) 
-por lo que la bibliografía es enviada internamente a OpenBiblio, con ceros a la izquierda. 
-La longitud predeterminada es de 5 dígitos, esto se puede cambiar editando el valor de
---  $nzeros en archivo biblio_copy_new.php --.</li>
-  <li>La ultima parte es igual que el que el valor interno de <i>copyid</i> de la copia.</li>
+  <li>La prima parte si calcola a partire dal <i>bibid</i> (numero interno di controllo della base dati) dato che la bibliografia � inviata internamente a GiordanoBruno, con gli zeri a sinistra. 
+La lunghezza predeterminata � di 5 cifre, questo pu� essere cambiato modificando il valore di --  $nzeros nel file biblio_copy_new.php --.</li>
+  <li>L'ultima parte � uguale al valore interno <i>copyid</i> della copia.</li>
 </ul>
 <br><br>
 
-<a name="seri">
-el numero de serie de la copia es genrado de manera integra con el número de codigo de barras
-</a> facilitar la introducción de información copia de un simple archivos de la tarjeta cuando el número único no fueron asignados, sólo los números de serie de varias copias de un título.
+<a name="seri">il numero di serie della copia viene generato in modo integrato con il numero di codice a barre </a>
+per facilitare l'introduzione di informazioni della copia quando il numero unico non � stato assegnato, ma solo i numeri di serie di copie multiple di un titolo.
 <br>
-La página de búsqueda de código de barras contiene información sobre 
-<a href="../shared/help.php?page=opacLookup#seri">Reconociendo el número de copias de serie en los números de código de barras autogenerados</a>.
+La pagina di ricerca del codice a barre contiene informazioni sopra 
+<a href="../shared/help.php?page=opacLookup#seri">Riconoscere il numero di serie delle copie nel numero del codice a barre autogenerato</a>.
 <br>
-Al agregar copias marcadas con la identificación de número de serie para una Bibliografía:
+Aggiungendo copie marcate con la identificazione del numero di serie di una bibliografiaa:
 <ul>
-  <li>Compruebe Autogenerar,</li>
-  <li>mostrar nuevas copias hasta el número de copias en serie se corresponde con el número de código de barras generado automáticamente el último dígito(s),</li>
-  <li>eliminar las copias hace que no este disponible, modificar el estado de las otras copias.</li>
+  <li>Selezionare Autogenerare,</li>
+  <li>mostrare nuove copie finch� il numero di serie corrisponde con il numero di codice a barre generato automaticamente al'lultima cifra,</li>
+  <li>eliminare le copie le rende non disponibili, modificare lo stato delle altre copie.</li>
 </ul>
 <br><br>

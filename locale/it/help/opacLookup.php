@@ -1,21 +1,20 @@
-<h1>pagina de Busquedas por codigos de Barras:</h1>
+<h1>pagina di ricerca per codice a barre:</h1>
 <br><br>
-El enlace de la búsqueda en las formas hora de salida, de llegada y la espera se abre una ventana emergente secundario, prácticamente idéntica a la
-el catalgo de acceso publico en linea (Online Public Access Catalog) (OPAC). En las páginas de resultados de una búsqueda, cada código de barras copia tiene enlaces adicionales
-(echa un vistazo a / y espera). Cuando se selecciona esta cerca de la ventana emergente y devolver el código de barras para el principal de la
-formulario correspondiente ventana, listo para ser presentado.
+Nel collegamento della ricerca nel formato orario di uscita, di arrivo e prenotazione si apre una finestra pop-up secondaria praticamente identica al
+catalgo dell'Accesso al Catalogo on-line (OPAC). Nelle pagine dei risultati di ricerca, ogni copia del codice a barre ha collegamenti aggiuntivi
+(Rivedere uscite/entrate | prenotare). Quando si seleziona questa ricerca della finestra comparsa  restituisce il codice a barre del modulo corrispondente, pronto per essere utilizzato.
 <br><br>
 
-Help Sub Sections:
+Sottosezione aiuto:
 <ul>
-  <li><a href="#exam">Ejemplo: Al seleccionar un número de código de barras a partir de los resultados de búsqueda</a></li>
-  <li><a href="#seri">Reconociendo el número de copias de serie en los números de código de barras autogenerados</a></li>
+  <li><a href="#exam">Esempio: Selezionare un numero di codice a barrae a partire dai risultati di una ricerca</a></li>
+  <li><a href="#seri">Riconoscere il numero di serie delle copie dai numeri di codici a barre autogenerati</a></li>
 </ul>
 <br><br>
 
 <a name="exam">
-El siguiente ejemplo los resultados de búsqueda muestra los enlaces a seleccionar un número de código de barras.</a> 
-Si su navegador muestra información sobre herramientas que el puntero del ratón se explica la acción de los enlaces.
+Nel seguente esempio i risultati della ricerca mostrano i collegamenti per selezionare un numerio di codice a barre.</a> 
+Se il browser mostra i suggerimenti, l'azione del mouse spiegherà il significato del link.
 <br><br>
 
 <!--**************************************************************************
@@ -138,14 +137,12 @@ Si su navegador muestra información sobre herramientas que el puntero del rató
 </table><br>
 
 <a name="seri">
-En el ejemplo de los resultados de búsqueda de código de barras de búsqueda anterior, sólo el último dígito (s) de códigos de barras bibliografías
-difieren.</a>
-Esto se debe a que fueron asignados como
-<a href="../shared/help.php?page=biblioCopyEdit#seri">Copia Números de serie integrado en números de código de barras</a>
-al agregar copias.
+Nell'esempio dei risultati della ricerca per codice a barre precedente, solo le ultime cifre del codice a barre della bibliografia sono diverse.</a>
+Dipende dal fatto che furono assegnate come
+<a href="../shared/help.php?page=biblioCopyEdit#seri">Copia Numeri di serie integrati nei numeri del codice a barre</a>
+quando sono state aggiunte le copie.
 <br>
-Esto y más en las copias agregando se explica en la sección de Ayuda para   
-<a href="../shared/help.php?page=biblioCopyEdit">Nueva copia y edición de páginas</a>.
+Questo ed altre informazioni sull'aggiunta delle copie è spiegato nella sezione di aiuto
+<a href="../shared/help.php?page=biblioCopyEdit">Nuova copia e modifica delle pagine</a>.
 <br><br>
-Tenga en cuenta que la numeración de los Resultados de la búsqueda, columna de la izquierda, es independiente del número de copias en serie integrado
-en el número de código de barras, esta es solo un enumerador de los registros apresentar.
+Si noti che la numerazione dei risultati della ricerca, colonna sinistra, è indipendente dal numero seriale di copia integrato nel numero del codice a barre, questo è solo un numero indicativo.

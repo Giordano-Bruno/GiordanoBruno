@@ -99,7 +99,7 @@ $trans["form_Need_Update"]		= "\$text = 'Sembra sia necessario aggiornare la bas
 $trans["to_version"]		= "\$text = 'alla versione';";
 //It looks like we need to update database version 
 $trans["form_Install"]			= "\$text = 'Installare';";
-$trans["install_head"]	= "\$text = 'Installazione dei Dati \"Giordano Bruno\" basat su Openbiblio 7.1 e Espabiblio  3.4';";
+$trans["install_head"]	= "\$text = 'Installazione dei Dati \"Giordano Bruno\" basata su Openbiblio 7.1 e Espabiblio  3.4';";
 //OpenBiblio Installation 7.2:
 $trans["form_media"]			= "\$text = ' Materiali Multimediali ';";
 $trans["form_cover"]			= "\$text = ' Copertine ';";

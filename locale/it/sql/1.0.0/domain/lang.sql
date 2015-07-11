@@ -1,2 +1,2 @@
-insert ignore into %prfx%lang set id='en', default_flg=DEFAULT;
+insert ignore into %prfx%lang set id='it', default_flg=DEFAULT;
 

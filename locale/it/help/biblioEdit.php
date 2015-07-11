@@ -1,12 +1,11 @@
 <h1>Nuova Bibliografia e modifica:</h1>
 La nuova bibliografia e la pagina modifica (Edit-Basic) sono basate sul formato standard 
 <a href="javascript:popSecondaryLarge('http://www.loc.gov/marc')">MARC 21</a>.<br>
-sólo un subconjunto muy pequeño de los cientos de campos MARC se incluyen en esta página de edición básica<br>
-Para que sea fácil agregar bibliografías.<br>
-Una vez que una bibliografía Se ha añadido a continuación, puede añadir cualquiera de los campos MARC 21 con la página de edición-MARC.
-<br><br>
-Una vez que haya añadido una nueva bibliografía que tendrá que añadir las copias de este
-bibliografía antes de la bibliografía está disponible para su publicacion.
+solo un piccolo sottoinsieme delle centinaia di campi MARC sono inclusi in questa pagina di modifica di base<br>
+per rendere più facile aggiungere bibliografie. <br>
+Una volta che è stata aggiunta una bibliografia quindi è possibile aggiungere qualsiasi campo MARC 21 con la pagina di modifica MARC.
+<br>
+Dopo aver aggiunto una nuova bibliografia è necessario aggiungere copie di questa bibliografia prima che sia disponibile per il prestito.
 <br><br>
 Sottosezione aiuto:
 <ul>
@@ -15,7 +14,7 @@ Sottosezione aiuto:
 </ul>
 <br><br>
 <a name="desc">
-La siguiente tabla ofrece una descripción para el campo ubicado en el menú Edición-Basica.</a>
+La tabella seguente offre una descrizione per il campo situato nel menù di mofdifica di base.</a>
 <br><br>
 
 I campi marcati con * sono richiesti.</font>
@@ -147,7 +146,7 @@ File immagine dell'autore:
   </td>
 <br/>
   <tr><td class="primary" valign="top">
-El término tópico o el nombre geográfico como elemento de entrada:
+Nome geografico come elemento di ingresso:
 </td>
 <td valign="top" class="primary">
 <input type="text" name="values[650a]" size="20" maxlength="300" value="" ><input type="hidden" name="indexes[]" value="650a" >
@@ -157,7 +156,7 @@ El término tópico o el nombre geográfico como elemento de entrada:
 <input type="hidden" name="requiredFlgs[650a]" value="" >
 </td></tr>
   <tr><td class="primary" valign="top">
-El término tópico o el nombre geográfico como elemento de entrada 2:
+Nome geografico come elemento di ingresso 2:
 </td>
 <td valign="top" class="primary">
 <input type="text" name="values[650a1]" size="20" maxlength="300" value="" ><input type="hidden" name="indexes[]" value="650a1" >
@@ -167,7 +166,7 @@ El término tópico o el nombre geográfico como elemento de entrada 2:
 <input type="hidden" name="requiredFlgs[650a1]" value="" >
 </td></tr>
   <tr><td class="primary" valign="top">
-El término tópico o el nombre geográfico como elemento de entrada 3:
+Nome geografico come elemento di ingresso 3:
 </td>
 <td valign="top" class="primary">
 <input type="text" name="values[650a2]" size="20" maxlength="300" value="" ><input type="hidden" name="indexes[]" value="650a2" >
@@ -177,7 +176,7 @@ El término tópico o el nombre geográfico como elemento de entrada 3:
 <input type="hidden" name="requiredFlgs[650a2]" value="" >
 </td></tr>
   <tr><td class="primary" valign="top">
-El término tópico o el nombre geográfico como elemento de entrada 4:
+Nome geografico come elemento di ingresso 4:
 </td>
 <td valign="top" class="primary">
 <input type="text" name="values[650a3]" size="20" maxlength="300" value="" ><input type="hidden" name="indexes[]" value="650a3" >
@@ -187,7 +186,7 @@ El término tópico o el nombre geográfico como elemento de entrada 4:
 <input type="hidden" name="requiredFlgs[650a3]" value="" >
 </td></tr>
   <tr><td class="primary" valign="top">
-El término tópico o el nombre geográfico como elemento de entrada 5:
+Nome geografico come elemento di ingresso 5:
 </td>
 <td valign="top" class="primary">
 <input type="text" name="values[650a4]" size="20" maxlength="300" value="" ><input type="hidden" name="indexes[]" value="650a4" >
@@ -197,7 +196,7 @@ El término tópico o el nombre geográfico como elemento de entrada 5:
 <input type="hidden" name="requiredFlgs[650a4]" value="" >
 </td></tr>
   <tr><td class="primary" valign="top">
-Declaración de edición:
+Edizione:
 </td>
 <td valign="top" class="primary">
 <input type="text" name="values[250a]" size="20" maxlength="300" value="" ><input type="hidden" name="indexes[]" value="250a" >
@@ -207,7 +206,7 @@ Declaración de edición:
 <input type="hidden" name="requiredFlgs[250a]" value="" >
 </td></tr>
   <tr><td class="primary" valign="top">
-LC control del número:
+Numero di controllo LC:
 </td>
 <td valign="top" class="primary">
 <input type="text" name="values[010a]" size="20" maxlength="300" value="" ><input type="hidden" name="indexes[]" value="010a" >
@@ -217,7 +216,7 @@ LC control del número:
 <input type="hidden" name="requiredFlgs[010a]" value="" >
 </td></tr>
   <tr><td class="primary" valign="top">
-Número Uniforme internacional de Libro:
+Numero di bibliografia nazionale:
 </td>
 <td valign="top" class="primary">
 <input type="text" name="values[020a]" size="20" maxlength="300" value="" ><input type="hidden" name="indexes[]" value="020a" >
@@ -227,7 +226,7 @@ Número Uniforme internacional de Libro:
 <input type="hidden" name="requiredFlgs[020a]" value="" >
 </td></tr>
   <tr><td class="primary" valign="top">
-Library of congress call number (Número de Clasificación):
+Library of congress call number (Numero di Classificazione):
 </td>
 <td valign="top" class="primary">
 <input type="text" name="values[050a]" size="20" maxlength="300" value="" ><input type="hidden" name="indexes[]" value="050a" >
@@ -237,7 +236,7 @@ Library of congress call number (Número de Clasificación):
 <input type="hidden" name="requiredFlgs[050a]" value="" >
 </td></tr>
   <tr><td class="primary" valign="top">
-Library of congress call number (Item number):
+Library of congress call number (numero elemento):
 </td>
 <td valign="top" class="primary">
 <input type="text" name="values[050b]" size="20" maxlength="300" value="" ><input type="hidden" name="indexes[]" value="050b" >
@@ -247,7 +246,7 @@ Library of congress call number (Item number):
 <input type="hidden" name="requiredFlgs[050b]" value="" >
 </td></tr>
   <tr><td class="primary" valign="top">
-Dewey decimal classification number (Classification number):
+Numero classificazione decimale Dewey (numero di Classificazione):
 </td>
 <td valign="top" class="primary">
 <input type="text" name="values[082a]" size="20" maxlength="300" value="" ><input type="hidden" name="indexes[]" value="082a" >
@@ -257,7 +256,7 @@ Dewey decimal classification number (Classification number):
 <input type="hidden" name="requiredFlgs[082a]" value="" >
 </td></tr>
   <tr><td class="primary" valign="top">
-Dewey decimal classification number (Número de edición):
+Numero classificazione decimale Dewey (Numero di edizione):
 </td>
 <td valign="top" class="primary">
 <input type="text" name="values[0822]" size="20" maxlength="300" value="" ><input type="hidden" name="indexes[]" value="0822" >
@@ -267,7 +266,7 @@ Dewey decimal classification number (Número de edición):
 <input type="hidden" name="requiredFlgs[0822]" value="" >
 </td></tr>
   <tr><td class="primary" valign="top">
-El lugar de la publicación, la distribución, etc.:
+Luogo di pubblicazione, distribuzione, etc.:
 </td>
 <td valign="top" class="primary">
 <input type="text" name="values[260a]" size="20" maxlength="300" value="" ><input type="hidden" name="indexes[]" value="260a" >
@@ -277,7 +276,7 @@ El lugar de la publicación, la distribución, etc.:
 <input type="hidden" name="requiredFlgs[260a]" value="" >
 </td></tr>
   <tr><td class="primary" valign="top">
-El nombre de editor, el distribuidor, etc.:
+Nome dell\'editore, del distribtore, etc.:
 </td>
 <td valign="top" class="primary">
 <input type="text" name="values[260b]" size="20" maxlength="300" value="" ><input type="hidden" name="indexes[]" value="260b" >
@@ -287,7 +286,7 @@ El nombre de editor, el distribuidor, etc.:
 <input type="hidden" name="requiredFlgs[260b]" value="" >
 </td></tr>
   <tr><td class="primary" valign="top">
-La fecha de la publicación, la distribución, etc.:
+Data di pubblicazione, distribuzione, etc.:
 </td>
 <td valign="top" class="primary">
 <input type="text" name="values[260c]" size="20" maxlength="300" value="" ><input type="hidden" name="indexes[]" value="260c" >
@@ -297,7 +296,7 @@ La fecha de la publicación, la distribución, etc.:
 <input type="hidden" name="requiredFlgs[260c]" value="" >
 </td></tr>
   <tr><td class="primary" valign="top">
-Resumen, nota, etc.:
+Sommario, note, etc.:
 </td>
 <td valign="top" class="primary">
 <input type="text" name="values[520a]" size="20" maxlength="300" value="" ><input type="hidden" name="indexes[]" value="520a" >
@@ -307,7 +306,7 @@ Resumen, nota, etc.:
 <input type="hidden" name="requiredFlgs[520a]" value="" >
 </td></tr>
   <tr><td class="primary" valign="top">
-Physical description (Extent):
+Descrizione fisica (Estensione):
 </td>
 <td valign="top" class="primary">
 <input type="text" name="values[300a]" size="20" maxlength="300" value="" ><input type="hidden" name="indexes[]" value="300a" >
@@ -317,7 +316,7 @@ Physical description (Extent):
 <input type="hidden" name="requiredFlgs[300a]" value="" >
 </td></tr>
   <tr><td class="primary" valign="top">
-Physical description (Otros detalles físicos):
+Descrizione fidsica (Altri dettagli fisici):
 </td>
 <td valign="top" class="primary">
 <input type="text" name="values[300b]" size="20" maxlength="300" value="" ><input type="hidden" name="indexes[]" value="300b" >
@@ -327,7 +326,7 @@ Physical description (Otros detalles físicos):
 <input type="hidden" name="requiredFlgs[300b]" value="" >
 </td></tr>
   <tr><td class="primary" valign="top">
-Physical description (Dimensiones):
+Descrizione fidsica (Dimensioni):
 </td>
 <td valign="top" class="primary">
 <input type="text" name="values[300c]" size="20" maxlength="300" value="" ><input type="hidden" name="indexes[]" value="300c" >
@@ -337,7 +336,7 @@ Physical description (Dimensiones):
 <input type="hidden" name="requiredFlgs[300c]" value="" >
 </td></tr>
   <tr><td class="primary" valign="top">
-Physical description (Acompañamiento de la materia):
+Descrizione fidsica (Accompagnamento della materia):
 </td>
 <td valign="top" class="primary">
 <input type="text" name="values[300e]" size="20" maxlength="300" value="" ><input type="hidden" name="indexes[]" value="300e" >
@@ -347,7 +346,7 @@ Physical description (Acompañamiento de la materia):
 <input type="hidden" name="requiredFlgs[300e]" value="" >
 </td></tr>
   <tr><td class="primary" valign="top">
-Los términos de la disponibilidad:
+Terminidi disponibilità:
 </td>
 <td valign="top" class="primary">
 <input type="text" name="values[020c]" size="20" maxlength="300" value="" ><input type="hidden" name="indexes[]" value="020c" >
@@ -357,7 +356,7 @@ Los términos de la disponibilidad:
 <input type="hidden" name="requiredFlgs[020c]" value="" >
 </td></tr>
   <tr><td class="primary" valign="top">
-Purchase price:
+Prezzo di acquisto:
 </td>
 <td valign="top" class="primary">
 <input type="text" name="values[541h]" size="20" maxlength="300" value="" ><input type="hidden" name="indexes[]" value="541h" >
@@ -367,12 +366,12 @@ Purchase price:
 <input type="hidden" name="requiredFlgs[541h]" value="" >
 </td></tr>
     <td nowrap="true" class="primary">
-      Seleccionar archivo de la portada<sup>(2)</sup>: 
+      Selezionare file della cpertina<sup>(2)</sup>: 
     </td>
       <td colspan="2" nowrap="true" class="primary">
 	<input type="file" name="file_portada"   onChange="File_ReloadK()">
     <tr><td class="primary" valign="top">
-Archivo de Imagen de la Portada:
+File immagine della copertina:
 </td>
 <td valign="top" class="primary">
 <input type="text" name="values[902a]" size="20" maxlength="300" value="" ><input type="hidden" name="indexes[]" value="902a" >
@@ -385,13 +384,13 @@ Archivo de Imagen de la Portada:
   </td>
 <br/>
     <td nowrap="true" class="primary">
-      Seleccionar archivo a subir Contraportada<sup>(3)</sup>: 
+      Selezionare file della controcopertina<sup>(3)</sup>: 
     </td>
       <td colspan="2" nowrap="true" class="primary">
 	<input type="file" name="file_contra_portada"   onChange="File_ContReload()">
   </td>
     <tr><td class="primary" valign="top">
-Archivo de Imagen de la Contraportada:
+File immagine della controcopertina:
 </td>
 <td valign="top" class="primary">
 <input type="text" name="values[902b]" size="20" maxlength="300" value="" ><input type="hidden" name="indexes[]" value="902b" >
@@ -403,13 +402,13 @@ Archivo de Imagen de la Contraportada:
   </td>
 <br/>
     <td nowrap="true" class="primary">
-      Seleccionar archivo digital a subir<sup>(4)</sup>: 
+      Selezionare file digitale da caricare<sup>(4)</sup>: 
     </td>
       <td colspan="2" nowrap="true" class="primary">
 	<input type="file" name="digital"   onChange="File_DigReload()">
   </td>
     <tr><td class="primary" valign="top">
-Material digital:
+Materiale digitale:
 </td>
 <td valign="top" class="primary">
 <input type="text" name="values[903a]" size="20" maxlength="300" value="" ><input type="hidden" name="indexes[]" value="903a" >
@@ -422,7 +421,7 @@ Material digital:
 <br/>
   </td>
     <tr><td class="primary" valign="top">
-Computer file characteristics:
+Caratteristiche del file:
 </td>
 <td valign="top" class="primary">
 <input type="text" name="values[256a]" size="20" maxlength="300" value="" ><sup>(6)</sup><input type="hidden" name="indexes[]" value="256a" >
@@ -436,13 +435,13 @@ Computer file characteristics:
 <br/>
   <tr>
     <td align="center" colspan="2" class="primary">
-   <p><sup>(2)</sup>La imagen de la portada precisa estar localizada en la carpeta /openbiblio/fotos/portadas/.</p>
-   <p><sup>(3)</sup>La imagen de la Contraportada precisa estar localizada en la carpeta /openbiblio/fotos/contraportadas/.</p>
+   <p><sup>(2)</sup>L\'immagine della copertina deve essere localizzata in /media/covers.</p>
+   <p><sup>(3)</sup>L\'immagine della controcopertina deve essere localizzata in /media/covers.</p>
    <p><sup>(4)</sup>Los materiales digitales deben estar en la carpeta, libros  /openbiblio/libros/.</p>
    <p><sup>(5)</sup>Los materiales digitales deben estar en la carpeta, libros  /openbiblio/libros/.</p>
-   <p><sup>(6)</sup>No modificar, es automatico.</p>
-<p><sup>(Nota: )</sup>Si el archivo de autor tiene (apellido, nombre.jpg) y en la base se respeta este formato se despligan de manera automatica</p>
-<p><sup>(Nota2: )</sup>Solo acepta para imagenes jpg, tif, png</p>
+   <p><sup>(6)</sup>Non modificare, è automatico.</p>
+<p><sup>(Nota: )</sup>Se il file dell\'autore si chiama nomecognome.jpg viene unito automaticamente</p>
+<p><sup>(Nota2: )</sup>Sono accettate solo immagini jpg, tif, png</p>
       <input type="submit" value="Enviar" class="button" name="enviar">
       <input type="button" onClick="self.location='../catalog/index.php'" value="Cancelar" class="button">
     </td>
@@ -453,5 +452,4 @@ Computer file characteristics:
     </td>
   </tr>
 </table>
-
 

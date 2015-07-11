@@ -9,7 +9,7 @@ INSERT INTO `lookup_hosts`
 ( NUll, 0,     'n',    'groar.bne.es:2210',         'Biblioteca Nacional',                           'bimo',        '',        '',      '',         ''),
 ( null, 5,     'n',    'groar.bne.es:2210',         'Biblioteca Nacional',                           'bimo',        '',        '',     'dc', 'marcxml'),
 ( null, 11,    'n',    'z3950.dbf.ddb.de:210',      'Deutsche National Bibliothek',                 'iltis',        'gast', 'gast',    'dc', 'marcxml'),
-( null, 10,    'n',    'opac.sbn.it:3950',          'SBN - Sistema Bibliotecario Nazi',             'nopac',        '',         '',    'dc', 'marcxml'),
+( null, 10,    'y',    'opac.sbn.it:3950',          'SBN - Sistema Bibliotecario Nazi',             'nopac',        '',         '',    'dc', 'marcxml'),
 ( NUll, 0,     'n',    'www.bne.es:2210',           'Biblioteca Nacional',                           'bima',        '',         '',     '',         ''),
 ( NUll, 0,     'n',    'www.bne.es:2210',           'Biblioteca Nacional',                           'bise',        '',         '',     '',         ''),
 ( NUll, 0,     'n',    'zed.natlib.govt.nz',        'National Library of New Zealand',               'pinz',        '',         '',   'dc',  'marcxml'),
