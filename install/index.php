@@ -59,8 +59,9 @@
 </br>
 
 <h3>
-<li>      Seleccione el idioma de la pantalla de instalacion, pude ser otro al del programa y base de datos.</li>
 <li>      Select the language for the installation screen, I could be another to the program and database.</li>
+<li>      Seleccione el idioma de la pantalla de instalacion, pude ser otro al del programa y base de datos.</li>
+<li>      Seleziona la lingua per l'installazione, può essere diversa da quella del programma e della base dati.</li>
 <li>      Wählen Sie die Sprache für die Installation auswählen, konnte ich eine andere zum Programm und Datenbank sein.</li>
 <li>      เลือกภาษาสำหรับการติดตั้งหน้าจอที่ฉันอาจจะเป็นอีกคนหนึ่งในการเขียนโปรแกรมและฐานข้อมูล</li>
 <li>      בחר את השפה עבור התקנת המסך, אני יכול להיות אחר לתכנית ומסד נתונים</li>
