@@ -104,5 +104,7 @@ define('OBI_DIR',"../locale/"); //Ruta de archivos de idioma
 #fixme revisar si es necesario se usa en Localize.php const BASELOCALE = OBIB_LOCALE;//para predefinirlo en shared/global_constants.php
 //define('OBIB_LOCALE',"es"); //idioma predefinido
 define("OBIB_CHARSET",    "utf-8");// define el charset de la base de datos Revisar es requerido en la instalacion
+define("OBIB_TITLE_LARGE", "375");// define el largo de caracteres a mostrar en titulos 
+
 
 

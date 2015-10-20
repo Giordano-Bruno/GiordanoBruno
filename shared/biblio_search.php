@@ -240,7 +240,8 @@ function changePage(page,sort)
   <input type="hidden" name="sortBy"			value="<?php echo H($_REQUEST["sortBy"]);?>">
   <input type="hidden" name="lookup"			value="<?php echo H($lookup);?>">
   <input type="hidden" name="page"				value="1">
-  <input type="hidden" name="tab"				value="<?php echo H($tab);?>">
+  <input type="hidden" name="               <a href="../shared/biblio_view.php?bibid=<?php echo HURL($biblio->getBibid());?>&amp;tab=<?php echo HURL($tab);?>"><?php echo  substr(H($biblio->getTitle()),0,OBIB_TITLE_LARGE);?></a></td>
+tab"				value="<?php echo H($tab);?>">
 </form>
 
 <!--**************************************************************************
@@ -450,7 +451,7 @@ $Ruta_Autor = ".." . AUTOR_PATH . "/" . H($biblio->getAuthor());
         <tr>
           <td class="noborder" width="1%" valign="top"><b><?php echo $loc->getText("biblioSearchTitle"); ?>:</b></td>
           <td class="noborder" colspan="3">
-               <a href="../shared/biblio_view.php?bibid=<?php echo HURL($biblio->getBibid());?>&amp;tab=<?php echo HURL($tab);?>"><?php echo  substr(H($biblio->getTitle()),0,75);?></a></td>
+                              <a href="../shared/biblio_view.php?bibid=<?php echo HURL($biblio->getBibid());?>&amp;tab=<?php echo HURL($tab);?>"><?php echo  substr(H($biblio->getTitle()),0,OBIB_TITLE_LARGE);?></a></td>
         </tr>
 <?php  //jalg modificado paramostrar title remante 11/dic/2013 ?>
         <tr>

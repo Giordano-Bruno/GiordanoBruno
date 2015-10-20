@@ -110,8 +110,8 @@ class Params {
     global $loc;
     assert('$loc');
     assert('!empty($namel)');
-    $loc_share = new Localize(OBIB_LOCALE, "shared");
-
+//    $loc_share = new Localize(OBIB_LOCALE, "shared"); //  //jalg multi 5-7-2015
+$loc_share = new Localize(OBIB_LOCALE, "shared"); 
     if ($type == 'session_id') {
       return;
     }

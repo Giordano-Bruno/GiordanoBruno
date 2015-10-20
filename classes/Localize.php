@@ -18,6 +18,10 @@ Codigo de alexrayne
 
 //const BASELOCALE = OBIB_LOCALE;//para predefinirlo en shared/global_constants.php
 
+const BASELOCALE = "en";
+
+
+
 class Localize {
   var $_trans = NULL;
   var $_base = NULL;
